@@ -1,10 +1,23 @@
-package EComAPI
+package main
 
-import EComApp "github.com/CodeDV8/go-ecom-app"
+import (
+	"fmt"
+	EComApp "github.com/codedv8/go-ecom-app"
+	EComBase "github.com/codedv8/go-ecom-base"
+)
 
 type API struct {
+	EComBase.Plugin
 }
 
-func (api *API) Init(app EComApp.Application) {
-
+func Init(app *EComApp.Application) error {
+	fmt.Printf("Let's rock and foul\n")
+	return nil
 }
+
+func Done(app *EComApp.Application) error {
+	fmt.Printf("Tackar för mig\n")
+	return nil
+}
+
+var api API
