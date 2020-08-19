@@ -1,22 +1,28 @@
 package main
 
 import (
-	"fmt"
 	EComApp "github.com/codedv8/go-ecom-app"
-	EComBase "github.com/codedv8/go-ecom-base"
 )
 
 type API struct {
-	EComBase.Plugin
 }
 
+var apiList []API
+
+// Exports
 func Init(app *EComApp.Application) error {
-	fmt.Printf("Let's rock and foul\n")
+	api := &API{}
+	api.Init(app)
+
+	apiList = append(apiList, *api)
+
 	return nil
 }
 
 func Done(app *EComApp.Application) error {
-	fmt.Printf("Tackar för mig\n")
+	for _, api := range apiList {
+		api.Done(app)
+	}
 	return nil
 }
 
