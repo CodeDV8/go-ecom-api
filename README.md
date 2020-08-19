@@ -1,3 +1,3 @@
-# go-ecom-api
+# go-ecom-plugin-api
 
-API for go-ecom
+API plugin for go-ecom
