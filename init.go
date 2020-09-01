@@ -29,7 +29,7 @@ func (api *API) SysInit(app *EComApp.Application) {
 			log.Printf("API_CALL: %+v\n", v)
 			v.S = "Bye bye"
 		}
-		return true, nil
+		return false, nil
 	})
 }
 
