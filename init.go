@@ -19,9 +19,14 @@ func (api *API) SysInit(app *EComApp.Application) {
 	// Add handlers
 	apiRouter.Handle("GET", "/", func(c *gin.Context) {
 		payload := &EComStructsAPI.Root{S: "Hej"}
-		app.CallHook("API_CALL", payload)
-		log.Printf("Returned %+v\n", payload)
-		c.JSON(200, payload)
+		_, _, err := app.CallHook("API_CALL", payload)
+		if err != nil {
+			log.Printf("Returned with error: %+v\n", err)
+			c.JSON(200, payload)
+		} else {
+			log.Printf("Returned without error: %+v\n", payload)
+			c.JSON(200, payload)
+		}
 	})
 
 	// Add hook
