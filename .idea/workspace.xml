@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a6525f33-4e2d-4931-8a3f-5fb04eda0875" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/init.go" beforeDir="false" afterPath="$PROJECT_DIR$/init.go" afterDir="false" />
-    </list>
+    <list default="true" id="a6525f33-4e2d-4931-8a3f-5fb04eda0875" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -50,17 +47,18 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Basic commits" />
     <MESSAGE value="Minor changes to the auth" />
-    <option name="LAST_COMMIT_MESSAGE" value="Minor changes to the auth" />
+    <MESSAGE value="Commit to ensure we are all on the same page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit to ensure we are all on the same page" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="0" y="173" key="CommitChangelistDialog2" timestamp="1598632366890">
+    <state x="0" y="173" key="CommitChangelistDialog2" timestamp="1598966592892">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state x="0" y="173" key="CommitChangelistDialog2/213.1103.1440.877/137.-1027.1680.1027/0.23.1920.1057@0.23.1920.1057" timestamp="1598632366890" />
-    <state x="638" y="291" key="Vcs.Push.Dialog.v2" timestamp="1598632374912">
+    <state x="0" y="173" key="CommitChangelistDialog2/213.1103.1440.877/137.-1027.1680.1027/0.23.1920.1057@0.23.1920.1057" timestamp="1598966592892" />
+    <state x="638" y="291" key="Vcs.Push.Dialog.v2" timestamp="1598966606946">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>
-    <state x="638" y="291" key="Vcs.Push.Dialog.v2/213.1103.1440.877/137.-1027.1680.1027/0.23.1920.1057@0.23.1920.1057" timestamp="1598632374912" />
+    <state x="638" y="291" key="Vcs.Push.Dialog.v2/213.1103.1440.877/137.-1027.1680.1027/0.23.1920.1057@0.23.1920.1057" timestamp="1598966606946" />
     <state x="705" y="472" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1597818106503">
       <screen x="0" y="23" width="1920" height="1057" />
     </state>

@@ -1,12 +1,14 @@
 package main
 
 import (
+	"log"
+
 	EComApp "github.com/codedv8/go-ecom-app"
 	EComStructsAPI "github.com/codedv8/go-ecom-structs/API"
 	"github.com/gin-gonic/gin"
-	"log"
 )
 
+// SysInit - Pre initialization of this object
 func (api *API) SysInit(app *EComApp.Application) {
 	// Create apiRouter
 	apiRouter := app.Router.Group("/api/v1")
@@ -33,6 +35,7 @@ func (api *API) SysInit(app *EComApp.Application) {
 	})
 }
 
+// Init - Initialization of this object
 func (api *API) Init(app *EComApp.Application) {
 	// Add hook
 	app.ListenToHook("API_CALL", func(payload interface{}) (bool, error) {

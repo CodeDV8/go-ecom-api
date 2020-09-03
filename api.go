@@ -4,6 +4,7 @@ import (
 	EComApp "github.com/codedv8/go-ecom-app"
 )
 
+// API - The main struct for this module
 type API struct {
 	App     *EComApp.Application
 	Message string
@@ -12,6 +13,8 @@ type API struct {
 var apiList []API
 
 // Exports
+
+// SysInit - Pre initialization of this module
 func SysInit(app *EComApp.Application) error {
 	api := &API{
 		App:     app,
@@ -24,6 +27,7 @@ func SysInit(app *EComApp.Application) error {
 	return nil
 }
 
+// Init - Initialization of this module
 func Init(app *EComApp.Application) error {
 	for _, api := range apiList {
 		api.Init(app)
@@ -32,6 +36,7 @@ func Init(app *EComApp.Application) error {
 	return nil
 }
 
+// Done - Shut down of this module
 func Done(app *EComApp.Application) error {
 	for _, api := range apiList {
 		api.Done(app)
